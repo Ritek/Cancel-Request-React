@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Select page to test functionality AbortController.</h2>
+      <h3>Page one is a standard component. Page two uses a custom hook.</h3>
+
+      <p><Link to="/page-one">page 1</Link></p>
+      <p><Link to="/page-two">page 2</Link></p>
     </div>
   );
 }
